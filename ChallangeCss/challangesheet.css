@@ -1,0 +1,59 @@
+body {
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+.box {
+	background-color: gray;
+	color: red;
+}
+
+.saleImage {
+    position: absolute;
+    top:0;
+    right:0;
+
+}
+
+#header {
+	text-align: center;
+	height: 100px;
+	margin: 10px;
+	width: 960px;
+}
+
+h1 {
+	padding-top: 20px;
+}
+
+#footer {
+    	text-align: center;
+        bottom: 0;
+        height: 100px;
+        position: fixed;
+		width: 960px;
+        margin: 0px 10px;
+
+        
+
+}
+.wrapper{
+    font-size: 0;
+    display: inline-block;
+    width: 960px;
+    padding:10px;
+}
+.contectbox{
+    padding: 10px;
+    font-size: 18px;
+    vertical-align: top;
+    display: inline-block;
+    width: 450px;
+    
+}
+
+#clearway{
+    padding-bottom: 150px;
+    
+    
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		
+		
+		
+			#container
+			{
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a fixed width*/
+				border-radius: 10px;
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
+				display: inline-block;
+				padding-top: 170px;
+				-ms-box-sizing: border-box;
+		
+
+			    
+			    
+
+			}
+			#header{
+			    -ms-box-sizing: border-box;
+			    border: solid black 1px;
+			    position: fixed;
+			    top:10px;
+			    width:960px;
+			    text-align: center;
+			    
+			}
+			.box{
+
+				background-color: #81BBC9;
+				/*margin:10px;*/ /*pushing our element out of bounds*/
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;  /* important to declare font-size here, otherwise will be 0*/
+				-ms-box-sizing: border-box;
+				padding: 10px;
+				margin-left: 10px;
+				margin-bottom: 10px;
+				display: inline-block;
+			}
+			
+			.sidebar{
+			    vertical-align: top;
+			    -ms-box-sizing: border-box;
+			    text-align: left;
+				display: inline-block;
+				width: 270px;
+				border-radius: 5px;
+				
+				
+			}
+			.content{
+			    vertical-align: top;
+			    -ms-box-sizing: border-box;
+			    display: inline-block;
+			    text-align: left;
+				width: 630px;
+		    	border-radius: 5px;
+		    
+
+			   
+			}
+			.foot{
+			    text-align: center;
+			    width:960px;
+	
+			}
+			#inkToTop{
+			    position: absolute;
+
+			}
+
+			</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<div id="header" class="box"> <h1>Header</h1>
+			</div>
+		
+			<div class="box sidebar"><h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quia, deserunt ut voluptatem praesentium, assumenda labore dolorum obcaecati enim maxime!</p>
+			</div>
+
+			<div class="box content"><h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, commodi, consectetur. In sint velit culpa voluptatum earum adipisci molestiae obcaecati, minus alias voluptates perspiciatis ipsa soluta ab, modi, amet reprehenderit? Ducimus architecto quisquam eaque laboriosam perferendis ea, itaque rem. Atque iste cupiditate iure nulla doloremque, pariatur a molestias quasi eum quae. Unde vel voluptatum, dolor deserunt tempora vitae natus harum. ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum facilis sint molestias quam iusto, doloremque sunt dolor dolores optio! Eius enim tempore iste aspernatur labore vel. Necessitatibus, deleniti corporis non possimus repellat velit animi impedit. Itaque eveniet ut quaerat.</p>
+			
+			</div>
+			<div class="box sidebar"><h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quia, deserunt ut voluptatem praesentium, assumenda labore dolorum obcaecati enim maxime!</p>
+			</div>
+
+			<div class="box content"><h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, commodi, consectetur. In sint velit culpa voluptatum earum adipisci molestiae obcaecati, minus alias voluptates perspiciatis ipsa soluta ab, modi, amet reprehenderit? Ducimus architecto quisquam eaque laboriosam perferendis ea, itaque rem. Atque iste cupiditate iure nulla doloremque, pariatur a molestias quasi eum quae. Unde vel voluptatum, dolor deserunt tempora vitae natus harum. ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum facilis sint molestias quam iusto, doloremque sunt dolor dolores optio! Eius enim tempore iste aspernatur labore vel. Necessitatibus, deleniti corporis non possimus repellat velit animi impedit. Itaque eveniet ut quaerat.</p>
+			
+			</div>
+		
+			<div class="box foot"><h2>Footer</h2>
+			</div>
+			<a href="#"><img src="img/arrow.png" id="llinkToTop" alt="Nav Arrow"/></a>
+			
+
+		</div>
+	</body>
+</html>
